@@ -1,6 +1,6 @@
 %define name                    kernel-xen-pvops
 %define version                 2.6.32.11
-%define rel                     1
+%define rel                     2
 %define kernel_version          2.6.32.11
 %define kernel_extraversion     xen-pvops-%{rel}mdv
 # ensures file uniqueness
@@ -158,7 +158,7 @@ popd
 install -d -m 755 %{buildroot}%{kernel_source_dir}
 tar cf - . \
     --exclude '*.o' --exclude '*.ko'  --exclude '*.cmd' \
-    --exclude '.temp*' --exclude '.tmp*' \
+    --exclude '.temp*' --exclude '.tmp*' --exclude '*.0[0-9][0-9][0-9]' \
     --exclude modules.order --exclude .gitignore \
     | tar xf - -C %{buildroot}%{kernel_source_dir}
 chmod -R a+rX %{buildroot}%{kernel_source_dir}
