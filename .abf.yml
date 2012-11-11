@@ -1,0 +1,6 @@
+sources:
+  "disable-mrproper-in-devel-rpms.patch:"	7b3f982b836b58688c36f7e5a7ab8b60d9b54225
+  "i386_defconfig-server:"	e207f90797b3101cd47495932c731e3390899cfa
+  "kbuild-really-dont-remove-bounds-asm-offsets-headers.patch:"	75d6d5ecf139e241e4283a7ef34ee0963ab760a8
+  "linux-2.6.32.11.tar.bz2:"	27f095139832b80de191d199266f29e0e3cfd4a3
+  "x86_64_defconfig-server:"	0ea67cedb7427af0a1079b005763dc5452e04f8d
