@@ -102,7 +102,7 @@ kernel modules at load time.
 
 %prep
 %setup -q -n linux-%{kernel_version}
-%apply_patches
+%autopatch -p1
 
 %build
 perl -p \
