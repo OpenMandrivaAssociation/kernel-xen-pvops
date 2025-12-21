@@ -32,6 +32,7 @@ Source12:   disable-mrproper-in-devel-rpms.patch
 Source13:   kbuild-really-dont-remove-bounds-asm-offsets-headers.patch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
+BuildRequires:	make
 %description 
 The XEN PVOPS kernel.
 
